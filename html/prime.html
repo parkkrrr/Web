@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h1>Prime Numbers</h1>
+    <script>
+        function prime(n) {
+            let flag = 0, i;
+            for (i = 2; i < n; i++) {
+                if (n % i == 0 && n != i) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0)
+                document.write(n, "<br>");
+        }
+        for (i = 2; i <= 30; i++){
+            prime(i);
+        }
+    </script>
+
+</body>
+
+</html>

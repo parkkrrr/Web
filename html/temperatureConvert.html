@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function celToFah() {
+            let celsius = document.getElementById("temp").value;
+            let celsiusToFahrenheit = (celsius * 9 / 5) + 32;
+            document.getElementById("output").innerHTML = celsiusToFahrenheit;
+        }
+        function fahToCel() {
+            let fahrenheit = document.getElementById("temp").value;
+            let fahrenheitToCelsius = (fahrenheit - 32) * 5 / 9;
+            document.getElementById("output").innerHTML = fahrenheitToCelsius;
+        }
+    </script>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <input type="text" id="temp" placeholder="eg. 245"> = <span id="output"></span>
+    <br><br>
+    <input type="button" onclick="celToFah()" value="toFahrenheit">
+    <input type="button" onclick="fahToCel()" value="toCelsius">
+</body>
+
+</html>

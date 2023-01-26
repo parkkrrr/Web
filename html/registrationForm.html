@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form><fieldset>
+        <legend>Registration Form</legend>
+        <pre>
+            Name        <input type="text" placeholder="Enter your Name" required>
+            Password    <input type="password" placeholder="Enter your password" required>
+            Address     <textarea placeholder="eg. House No.392-F, Gomtinagar" rows="4" cols="20"></textarea>
+            Game        <select>
+                            <option>Hockey</option>
+                            <option>Football</option>
+                            <option>Badminton</option>
+                            <option>Cricket</option>
+                            <option>Volleyball</option>
+                        </select>    
+            Gender      <input type="radio" id="male" name="gender"><label for="male">Male</label><input type="radio" id="female" name="gender"><label for="female">Female</label>
+            E-mail      <input type="email">
+            Phone       <input type="tel" pattern="[0-9] {10}">
+
+                        <input type="submit"><input type="reset">
+        </pre>
+    </fieldset></form>
+</body>
+</html>

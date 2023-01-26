@@ -1,0 +1,9 @@
+h1{
+    color: lightcoral;
+    text-decoration-line: underline;
+    font-size: larger;
+}
+p{
+    color:blue;
+    border:2px solid purple;
+}
